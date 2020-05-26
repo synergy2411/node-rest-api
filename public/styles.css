@@ -1,0 +1,19 @@
+body{
+    margin-top : 10px;
+    margin-bottom : 10px;
+}
+li{
+    transition: all 0.2s ease-in;
+}
+li:hover{
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+.addNewItemForm{
+    display : none;
+    transition: all 0.3s ease;
+}
+#selectedItemForm{
+    display: none;
+}

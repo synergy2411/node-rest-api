@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>REST API</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="card">
+            <div class="card card-header">
+              <p class="display-4 text-center">My Todos</p>
+            </div>
+            <div class="card card-body" id="todo-content">
+              <div class="row">
+                <div class="col-md-10 offset-md-1">
+                  <ul id="todo-items" class="list-group"></ul>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                <div class="col-md-10 offset-md-1">
+                  <button
+                    class="btn btn-block btn-outline-primary"
+                    id="btnShowForm"
+                  >
+                    <span id="btnText"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="addNewItemForm">
+                <hr />
+                <div class="row">
+                  <div class="col-md-8">
+                    <input
+                      type="text"
+                      id="txtAddItem"
+                      class="form-control"
+                      placeholder="add new todo here..."
+                    />
+                  </div>
+                  <div class="col-md-4">
+                    <button class="btn btn-block btn-outline-dark" id="btnAdd">
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5 col-md-5">
+          <div id="selectedItemForm">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card card-body">
+                    <div id="selectedItem"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <br />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
